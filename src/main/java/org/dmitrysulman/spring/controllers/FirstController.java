@@ -41,7 +41,7 @@ public class FirstController {
             case "multiplication" -> model.addAttribute("result", a * b);
             case "addition" -> model.addAttribute("result", a + b);
             case "subtraction" -> model.addAttribute("result", a - b);
-            case "division" -> model.addAttribute("result", a / b);
+            case "division" -> model.addAttribute("result", a / (double) b);
             default -> model.addAttribute("result", "Wrong action!");
         }
         return "first/calculator";
